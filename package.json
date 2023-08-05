@@ -1,0 +1,29 @@
+{
+  "name": "everythingtimer",
+  "version": "1.0.0",
+  "description": "EverythingTimer is an app which provides ticking after specific interval functionality",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SauravTyagi1987/EverythingTimer.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Saurav Tyagi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SauravTyagi1987/EverythingTimer/issues"
+  },
+  "homepage": "https://github.com/SauravTyagi1987/EverythingTimer#readme",
+  "devDependencies": {
+    "electron": "^25.4.0"
+  },
+  "dependencies": {
+    "node-wav-player": "^0.2.0"
+  }
+}
