@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
+const player = require("node-wav-player");
 
 let mainWindow;
 
@@ -17,6 +18,22 @@ function createWindow() {
   mainWindow.on("closed", function () {
     mainWindow = null;
   });
+
+  // Start the interval to play sound every 5 minutes
+  setInterval(playSound, 1 * 60 * 1000); // 1 minutes in milliseconds
+}
+
+function playSound() {
+  player
+    .play({
+      path: "sample-12s.wav",
+    })
+    .then(() => {
+      console.log("The wav file started to be played successfully.");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
 
 app.on("ready", createWindow);
