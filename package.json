@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/SauravTyagi1987/EverythingTimer#readme",
   "devDependencies": {
-    "electron": "^25.4.0"
+    "electron": "^25.8.4"
   },
   "dependencies": {
     "node-wav-player": "^0.2.0"
